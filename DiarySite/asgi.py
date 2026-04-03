@@ -1,5 +1,5 @@
 """
-ASGI config for DiarySite1 project.
+ASGI config for DiarySite project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
