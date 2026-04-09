@@ -6,9 +6,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lab·Mem 001 — Future Gadget Laboratory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;800&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+FONT WAS RAJDHANI
+-->
 <style>
-:root{--bg:#030608;--bg2:#070d10;--bg3:#0a1218;--surface:rgba(10,20,28,0.85);--surface2:rgba(14,28,40,0.7);--border:rgba(0,200,255,0.15);--border2:rgba(0,200,255,0.30);--accent:#00c8ff;--accent2:#ff6a00d3;--accent3:#39ff14;--text:#c8e8f0;--text2:#7ab0c0;--text3:#3a6070;--nixie:#ff8c14;--red:#ff2d55;--glow-c:rgba(0,200,255,0.18);--glow-o:rgba(255,106,0,0.22);--font-mono:'Share Tech Mono',monospace;--font-head:'Orbitron',sans-serif;--font-body:'Rajdhani',sans-serif;--r:8px;--trans:0.35s cubic-bezier(0.4,0,0.2,1)}
+  .drawer-img{
+  width:100%;
+  max-height:300px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:16px;
+  opacity:0.95;
+}
+  .entry-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:10px;
+  opacity:0.9;
+}
+:root{--bg:#030608;--bg2:#070d10;--bg3:#0a1218;--surface:rgba(10,20,28,0.85);--surface2:rgba(14,28,40,0.7);--border:rgba(0,200,255,0.15);--border2:rgba(0,200,255,0.30);--accent:#00c8ff;--accent2:#ff6a00d3;--accent3:#39ff14;--text:#c8e8f0;--text2:#7ab0c0;--text3:#3a6070;--nixie:#ff8c14;--red:#ff2d55;--glow-c:rgba(0,200,255,0.18);--glow-o:rgba(255,106,0,0.22);--font-mono:'Share Tech Mono',monospace;--font-head:'Orbitron',sans-serif;--font-body:'Inter',sans-serif;--r:8px;--trans:0.35s cubic-bezier(0.4,0,0.2,1)}
 [data-theme="light"]{--bg:#e8f2f8;--bg2:#d4e8f2;--bg3:#c0d8e8;--surface:rgba(220,240,252,0.88);--surface2:rgba(200,228,248,0.72);--border:rgba(0,130,180,0.22);--border2:rgba(0,130,180,0.40);--accent:#0088cc;--accent2:#cc4400;--text:#0a2030;--text2:#2a6080;--text3:#6090b0;--glow-c:rgba(0,140,200,0.15);--glow-o:rgba(200,80,0,0.15)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -367,7 +386,8 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:4
       </div>
       <div class="about-text-col reveal-right" style="transition-delay:0.2s">
         <p>Welcome to <strong>Niveditha's Digital Space</strong>, with a Steins; Gate theme</p>
-        <p>Each entry is a <strong>D-Mail to the future</strong>. Not Really. Just the world through my lens. Which is probably not the best lens to look at life through ig. But here goes anyway.</p>
+        <p>I add journal entries sometimes. Just the world through my lens. Which is probably not the best lens to look at life through ig. But here goes anyway.</p>
+        <p>The divergence meter at the start is from the anime Steins;Gate. In the anime, it signifies the current worldline. The idea is that every little decision changes the number a bit, but over 1.000000% changes the timeline. But unless the timeline changes, the destination stays the same. That makes things feel more stable than the concept of timelines changing every second.</p>
         <p>You can read my writings in the journal section.</p>
 
         <div class="divergence-badge">
@@ -618,25 +638,62 @@ function showToast(msg){
 const tagLabels={mem:'Memory',exp:'Experiment',obs:'Observation',time:'Time'};
 const tagClasses={mem:'tag-mem',exp:'tag-exp',obs:'tag-obs',time:'tag-time'};
 let entries=JSON.parse(localStorage.getItem('sg-entries')||'null')||[
-  {id:1,serial:'OBS-001',title:'The Butterfly Effect',tag:'obs',date:'2026-03-01',content:`I always think about the Butterfly effect. How just me merely existing in this universe causes so many tiny changes which compounds to huge changes in the timeline.
+  {id:1,serial:'OBS-001',title:'The Butterfly Effect',image:'/static/Butterfly.png',tag:'obs',date:'2026-03-01',content:`I always think about the Butterfly effect. How just me merely existing in this universe causes so many tiny changes which compounds to huge changes in the timeline.
+
+
 There's two ways to look at it though. Sometimes I think the situations aligned for me to survive the day. Sometimes I think me existing would have come at the cost of someone else's death.
-.
+
+
 I like the concept of multiple timelines existing. Obviously not actually existing, just the concept. The timelines could just exist in my head. Reaching a timeline I want feels more possible that way.
+
+
 They say in an infinite universe everything that can happen already has. I love that idea a bit too much. It makes life feel like it's more in my control. Even though it's not.`},
-  {id:2,serial:'OBS-002',title:'Moral Compass',tag:'obs',date:'2026-03-25',content:`I've always craved the idea of things feeling real. So human and imperfect. A morally grey compass and not a black and white one.
+  {id:2,serial:'OBS-002',title:'Moral Compass',image:'/static/Compass.png',tag:'obs',date:'2026-03-25',content:`I've always craved the idea of things feeling real. So human and imperfect. A morally grey compass and not a black and white one.
+
+
 We are comfortable with labelling people as good or bad. It helps us avoid discomfort. If we see things from their eyes, if we start being empathetic, if we start seeing why they are the way they are, and why they make the choices they make, we realise it gets a bit harder to villianise them. We might then realise that a lot of things shape who a person is, a lot of them being beyond their control. It is uncomfortable. And easier to avoid. Maybe we hold on to black and white narratives because it's easier to judge than to understand the parts in between.`},
-  {id:3,serial:'MEM-001',title:'Discussions on honesty',tag:'mem',date:'2026-03-31',content:`While I was talking to my mother this week, a guy came to our front door asking for some money. He was differently abled. When she was back, she brought up how the last time she gave a 500 rupee note to a guy who didn't have a leg and asked him to give 400 back from the shop, he never returned the money. She remarked how he should have been honest and probably spent the money on alcohol.
+  {id:3,serial:'MEM-001',title:'Discussions on honesty',image:'/static/Balance.png',tag:'mem',date:'2026-03-31',content:`While I was talking to my mother this week, a guy came to our front door asking for some money. He was differently abled. When she was back, she brought up how the last time she gave a 500 rupee note to a guy who didn't have a leg and asked him to give 400 back from the shop, he never returned the money. She remarked how he should have been honest and probably spent the money on alcohol.
+
+
 She might be right. He is supposed to live honestly and return the money apparently. I wonder what if I was in his place.
+
+
 I don't think I'd be honest. I would spiral maybe. Drink alcohol to cope with my problems. I would take whatever money I have from people and make stupid mistakes. Get more bottles with the money.
+
+
 I need to eat with the 500 rupees I have. I need someone who would hire me to do the work I can manage with one leg. Nothing makes us better than them. Then isn't the thought that 'God' chose to give us two legs and leave them disabled a bit conceited?
+
+
 How much money can you save by begging? How long will that money last before you go broke again. And how do you 'stay positive'? Negativity is the norm there.
+
+
 How would he numb the gnawing pain inside him. The kind that's probably there ever since he can remember? Drinks to numb it maybe. Oh but drinking costs money.
+
+
 They are incredibly enduring. But somehow, the fact that he didn't give back the 100 rupees, his disloyalty is what stands out. I can't help but think that, subconsciously, we convince ourself his situation is justified
+
 "because he is disloyal"
 "because he drinks"
+
 and then it's just black and white. And it is easy.`},
-/*  {id:4,serial:'OBS-001',title:'Observation: Attractor Fields',tag:'obs',date:'2024-09-01',content:`The attractor field theory posits that certain key events exert a gravitational pull on all nearby worldlines, causing them to converge regardless of attempted interventions. No matter how many D-Mails we send, the attractor field reasserts itself.\n\nThe question is not whether fate can be changed, but whether there exists a convergence point where all the contradictions resolve. I call it the Steins Gate.`},
-  {id:5,serial:'EXP-003',title:'Future Gadget #08 — The Divergence Meter',tag:'exp',date:'2024-09-14',content:`Completed construction of Future Gadget #08: the Divergence Meter. Using decommissioned Nixie tubes and a custom-calibrated cesium frequency reference, the device measures the divergence value of the current worldline to six decimal places.\n\nCurrent reading: 0.456914. We remain in the Beta attractor field. But the meter flickers — and I have learned that all flickering lights are telling you something if you know how to listen.`},
+  {id:4,serial:'OBS-003',title:'Time Travel Media',image:'/static/Time.png', tag:'obs',date:'2026-04-09',content:`I enjoy time travel media a lot. Eventhough most of my preferences for media is limited to "as realistic as possible", I think I'm willing to excuse that one unrealistic element.I haven't watched a lot of movies ever since I was small. And most of my rewatch includes whatever I saw back in school when I was happy. However I do enjoy time travel.
+
+Being able to go back to the past, see all the different ways everything could play out, the million possibilities, makes me feel overwhelmed but also so (word for feeling like there are things happening larger than life and just being bewildered)
+
+I've watched all sorts of time travel media. Ones with really well thought out storylines like Dark, ones very grounded in scientific theories like Primer and Interstellar, ones with unconventional concepts of time travel like Predestination, and ones like Steins:Gate, which has one of the best stories centered in time travel.
+
+There's also the 'random plot but still watched for the time travel elements' ones, like Tokyo revengers, and even the ones where towards the end, even the writers gave up (like summer time rendering lol).
+
+I've watched a time travel Taiwanese drama called Someday or One Day and a Korean drama called Watermelon Sugar. I don't usually watch kdramas but these made me cry. I don't think the hate on kdrama is deserved. It's more like a penalty for being something girls generally enjoy i guess.
+
+Then there are the classics like Back to the Future, the butterfly effect and 13 going on 30. There's also a few which don't stay in my memory as much, like The girl who leapt through time and Erased.
+
+Once I started watching movies i started appreciating how incredibly creative everyone is. As someone who doesn't have a single creative cell in her body, I cant help but appreciate the differennt ways people have used a concept like time travel. The different ideas, the execution and cinematography is truly amazing.
+
+What a time to be alive.
+
+Love these temporary hits of positivity I get every now and then lol.`},
+ /* {id:5,serial:'EXP-003',title:'Future Gadget #08 — The Divergence Meter',tag:'exp',date:'2024-09-14',content:`Completed construction of Future Gadget #08: the Divergence Meter. Using decommissioned Nixie tubes and a custom-calibrated cesium frequency reference, the device measures the divergence value of the current worldline to six decimal places.\n\nCurrent reading: 0.456914. We remain in the Beta attractor field. But the meter flickers — and I have learned that all flickering lights are telling you something if you know how to listen.`},
 */
   ];
 function saveEntries(){localStorage.setItem('sg-entries',JSON.stringify(entries));}
@@ -663,7 +720,9 @@ function renderJournal(){
     const ds=new Date(entry.date).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
     card.innerHTML=`
       <div class="entry-card-header"><span class="entry-serial">${entry.serial}</span><span class="entry-tag ${tagClasses[entry.tag]}">${tagLabels[entry.tag]}</span></div>
-      <div class="entry-card-body"><div class="entry-title">${entry.title}</div><div class="entry-excerpt">${excerpt}</div></div>
+      <div class="entry-card-body">
+      ${entry.image ? `<img src="${entry.image}" class="entry-img">` : ''}
+      <div class="entry-title">${entry.title}</div><div class="entry-excerpt">${excerpt}</div></div>
       <div class="entry-card-footer"><span class="entry-date">${ds}</span><button class="entry-read-btn" onclick="openDrawer(${entry.id})">READ LOG ▸</button></div>`;
     grid.appendChild(card);
     const o=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}});},{threshold:0.08});
@@ -688,7 +747,9 @@ function openDrawer(id){
     <div class="drawer-serial">${entry.serial} // ${tagLabels[entry.tag].toUpperCase()}</div>
     <div class="drawer-title">${entry.title}</div>
     <div class="drawer-meta"><span class="entry-tag ${tagClasses[entry.tag]}">${tagLabels[entry.tag]}</span><span class="entry-date">${ds}</span></div>
-    <div class="drawer-body">${entry.content.split('\n\n').map(p=>`<p>${p}</p>`).join('')}</div>`;
+    <div class="drawer-body">
+    ${entry.image ? `<img src="${entry.image}" class="drawer-img">` : ''}
+    ${entry.content.split('\n\n').map(p=>`<p>${p}</p>`).join('')}</div>`;
   document.getElementById('drawer').classList.add('open');
   document.getElementById('drawer-overlay').classList.add('open');
 }

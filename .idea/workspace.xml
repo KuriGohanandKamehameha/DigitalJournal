@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0019b1f-163d-4b82-89b0-18f20c47f718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DiaryProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiarySite/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiarySite/entries/templates/entries/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="b0019b1f-163d-4b82-89b0-18f20c47f718" name="Changes" comment="first commit without backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KuriGohanandKamehameha"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KuriGohanandKamehameha/DigitalJournal.git",
+    "accountId": "99d6b1f3-0c95-4a5e-a904-1f9da1cf3959"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -38,6 +41,11 @@
     "settings.editor.selected.configurable": "io.unthrottled.amii.config.ui.PluginSettingsUI"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\DiaryProject" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,6 +62,19 @@
       <option name="presentableId" value="Default" />
       <updated>1774728436898</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit without backend">
+      <option name="closed" value="true" />
+      <created>1775247164871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775247164871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit without backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit without backend" />
   </component>
 </project>
